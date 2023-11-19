@@ -1,26 +1,27 @@
 .bg-dark {
-  background-color: #002A8D; /* Azul Oscuro */
+  background-color: #002A8D;
 }
 
 .nav-link {
-  color: #FF7800; /* Naranja */
+  color: #FF7800;
 }
 
-.nav-link:hover, .nav-link.active {
-  background-color: #FF7800; /* Naranja */
+.nav-link:hover,
+.nav-link.active {
+  background-color: #FF7800;
   color: white;
 }
 
 .bg-dark {
-  background-color: #002A8D !important; /* Azul Oscuro */
+  background-color: #002A8D !important;
 }
 
 .nav-link.active {
-  background-color: #FF7800; /* Naranja */
+  background-color: #FF7800;
 }
 
 .nav-link {
-  color: #FF7800; /* Naranja */
+  color: #FF7800;
 }
 
 .nav-link:hover {
@@ -28,11 +29,11 @@
 }
 
 .dropdown-menu-dark {
-  background-color: #002A8D; /* Azul Oscuro */
+  background-color: #002A8D;
 }
 
 .dropdown-item {
-  color: white; /* Naranja */
+  color: white;
 }
 
 .dropdown-item:hover {

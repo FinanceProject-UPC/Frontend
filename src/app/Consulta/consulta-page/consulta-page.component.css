@@ -1,3 +1,16 @@
+*{
+    color: #202E44;
+}
+
+h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+
 .data-container {
     border: 1px solid #ccc;
     padding: 20px;

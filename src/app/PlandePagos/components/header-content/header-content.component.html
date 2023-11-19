@@ -1,23 +1,24 @@
-<div class="example-container" *ngIf="shouldRun">
-  <div class="header">
-    <div class="logo">
+<div class="container" *ngIf="shouldRun">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+        <!-- Icono de Bootstrap o tu logo aquí -->
+      </svg>
+    </a>
 
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="#" class="nav-link px-4 link-secondary">Inicio</a></li>
+      <li><a href="#" class="nav-link px-4 link-dark">Features</a></li>
+      <li><a href="#" class="nav-link px-4 link-dark">Beneficios</a></li>
+      <li><a href="#" class="nav-link px-4 link-dark">FAQs</a></li>
+      <li><a href="#" class="nav-link px-4 link-dark">About</a></li>
+    </ul>
 
+    <div class="col-md-3 text-end">
+      <a href="login" class="btn btn-outline-primary me-2">Log In</a>
+      <a href="signup" class="btn btn-primary">Sign Up</a>
     </div>
-    <div class="button-container">
-      <a href="signup" class="button">
-        <mat-icon class="icon">group_add</mat-icon> Sign Up
-      </a>
-      <a href="login" class="button">
-        <mat-icon class="icon">group</mat-icon> Log In
-      </a>
-    </div>
-  </div>
+  </header>
 
-
-
-      <!--aqui van las etiquetas del contenido-->
-      <p><router-outlet></router-outlet></p>
-
-
+  <p><router-outlet></router-outlet></p>
 </div>

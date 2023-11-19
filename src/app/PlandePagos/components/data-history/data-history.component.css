@@ -1,5 +1,6 @@
 .centered-content h1 {
-  font-size: 36px; /* Puedes ajustar el tamaño de fuente según tus preferencias */
+  font-size: 36px;
+  color: #002A8D;
 }
 
 .centered-content h2 {
@@ -13,7 +14,7 @@
 }
 
 .consulta-title{
-  color:yellow;
+  color:white;
 }
 .centered-content {
   text-align: center;
@@ -33,7 +34,7 @@
 }
 
 .card-header {
-  background-color: #007bff;
+  background-color: #FF7800;
   color: #fff;
   padding: 15px;
   text-align: center;
@@ -62,7 +63,7 @@
 }
 
 .card-footer button {
-  background-color: #dc3545;
+  background-color:red;
   color: #fff;
   border: none;
   padding: 10px;

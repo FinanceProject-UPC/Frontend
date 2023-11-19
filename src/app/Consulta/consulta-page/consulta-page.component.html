@@ -1,77 +1,35 @@
-<!-- <div class="w-full">
-  
+<div class="container">
+  <!-- Fila para las dos columnas -->
+  <div class="row">
+    <!-- Columna para Datos -->
+    <div class="col-md-6">
+      <h3 >Datos del Prestamo</h3>
       <div class="data-row">
-        <span class="data-label">TEA (Tasa Efectiva Anual):</span>
-        <span class="data-value">{{ (TEA *100).toFixed(2)}} %</span>
-      </div>
-      <div class="data-row">
-        <span class="data-label">TEM (Tasa Efectiva Mensual):</span>
-        <span class="data-value">{{ (TEM *100).toFixed(2)}} %</span>
-      </div>
-      <div class="data-row">
-        <span class="data-label">CI (Capital Inicial):</span>
-        <span class="data-value">{{ formatoMosneda(CI, tipoMoneda) }}</span>
-      </div>
-      <div class="data-row">
-        <span class="data-label">CF (Capital Final):</span>
-        <span class="data-value">{{ formatoMosneda(CF,tipoMoneda) }}</span>
-      </div>
-
-
-      <div class="data-row">
-        <span class="data-label">VAN (Valor Actual Neto):</span>
-        <span class="data-value">{{ formatoMosneda(VAN,tipoMoneda) }}</span>
-      </div>
-      <div class="data-row">
-        <span class="data-label">TIR (Tasa Interna de Retorno):</span>
-        <span class="data-value">{{ (TIR*100).toFixed(2) }}</span>
-      </div>
-    </div>
-  </div>
-
-
-</div> -->
-
-<div class="w-100">
-  <div class="d-flex justify-content-between mb-5">
-    <div class="data-container">
-      <div class="data-row d-flex align-items-center">
         <span class="data-label fw-bold">Monto:</span>
         <span class="data-value ms-2">{{formatoMosneda(datosForm.monto, tipoMoneda)}}</span>
       </div>
-
-      <div class="data-row d-flex align-items-center">
-        <span class="data-label fw-bold">Prestamo:</span>
-        <span class="data-value ms-2">{{formatoMosneda(Prestamo, tipoMoneda)}}</span>
-      </div>
-
-      <div class="data-row d-flex align-items-center">
+      <div class="data-row">
         <span class="data-label fw-bold">Tasa de Interés:</span>
         <span class="data-value ms-2">{{(tasa*100).toFixed(2)}}% ({{ datosForm.tipoTasaInteres }})</span>
       </div>
-
-      <div class="data-row d-flex align-items-center">
+      <div class="data-row">
         <span class="data-label fw-bold">Plazo de Pago:</span>
         <span class="data-value ms-2">{{ datosForm.plazoPago }} meses</span>
       </div>
-
-      <div class="data-row d-flex align-items-center">
+      <div class="data-row">
         <span class="data-label fw-bold">Tipo de Moneda:</span>
         <span class="data-value ms-2">{{ tipoMoneda }}</span>
       </div>
+    </div>
 
-      <div class="data-row d-flex align-items-center">
-        <span class="data-label fw-bold">PV (Valor Presente):</span>
-        <span class="data-value ms-2">{{formatoMosneda(PV, tipoMoneda)}}</span>
-      </div>
-
-      <div class="data-row d-flex align-items-center">
+    <!-- Columna para Resultados -->
+    <div class="col-md-6">
+      <h3>Resultados</h3>
+      <div class="data-row">
         <span class="data-label fw-bold">TEA (Tasa Efectiva Anual):</span>
         <span class="data-value ms-2">{{(TEA*100).toFixed(2)}}%</span>
       </div>
-
       <div class="data-row">
-        <!-- <span class="data-label">TEM (Tasa Efectiva Mensual):</span> -->
         <span class="data-label fw-bold">TEM (Tasa Efectiva Mensual):</span>
         <span class="data-value ms-2">{{(TEM*100).toFixed(2)}}%</span>
       </div>
@@ -83,7 +41,10 @@
         <span class="data-label fw-bold">CF (Capital Final):</span>
         <span class="data-value ms-2">{{ formatoMosneda(CF,tipoMoneda) }}</span>
       </div>
-
+      <div class="data-row">
+        <span class="data-label fw-bold">Prestamo:</span>
+        <span class="data-value ms-2">{{formatoMosneda(Prestamo, tipoMoneda)}}</span>
+      </div>
       <div class="data-row">
         <span class="data-label fw-bold">VAN (Valor Actual Neto):</span>
         <span class="data-value ms-2">{{ formatoMosneda(VAN,tipoMoneda) }}</span>
@@ -94,3 +55,4 @@
       </div>
     </div>
   </div>
+</div>
