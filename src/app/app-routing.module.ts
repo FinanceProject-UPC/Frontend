@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HeaderContentComponent} from "./PlandePagos/components/header-content/header-content.component";
 import {ConsultaPageComponent} from "./Consulta/consulta-page/consulta-page.component";
@@ -9,6 +9,7 @@ import {LoginComponent} from "./PlandePagos/components/login/login.component";
 import {SignupComponent} from "./PlandePagos/components/signup/signup.component";
 import {SessionContentComponent} from "./Consulta/session-content/session-content.component";
 import {ProfileComponent} from "./PlandePagos/components/profile/profile.component";
+import { HomeContentComponent } from './home-content/home-content.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'signup', component: SignupComponent },
   {path: 'session', component: SessionContentComponent },
   { path: 'profile/:studentId', component: ProfileComponent },
+  {path: 'benefit', component: HomeContentComponent}
 ];
 
 @NgModule({
