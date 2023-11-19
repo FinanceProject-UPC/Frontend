@@ -1,42 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
 
-*{
-    box-sizing: border-box;
-}
 .container-center {
     display: grid;
     place-items: center;
 }
 
 
-.title-login{
+.title-login {
 
-top: 169px;
-font-family: 'Signika Negative', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 36px;
-line-height: 44px;
+    top: 169px;
+    font-family: 'Signika Negative', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
 
-color: #002A8D;
+    color: #002A8D;
 }
 
-.form-control{
+.form-control {
     border-color: #FF7800;
     color: #202E44;
 }
 
-.btn{
+.btn {
     background-color: #FF7800;
     border-color: #FF7800;
 }
 
-.image-login{
+.image-login {
     height: 530px;
     width: auto;
 }
 
-.img-fluid{
+.img-fluid {
     margin: 0;
     padding: 0;
     height: 100%;
