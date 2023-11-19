@@ -1,0 +1,26 @@
+.container-center{
+  display: grid;
+  place-items: center;
+  color: #002A8D;
+}
+
+.form-control{
+  border-color: #FF7800;
+}
+.form-label{
+  color: #202E44;
+}
+
+.btn{
+  background-color: #FF7800;
+  border-color: #FF7800;
+}
+
+.text-center{
+  font-family: 'Signika Negative', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #002A8D;
+}

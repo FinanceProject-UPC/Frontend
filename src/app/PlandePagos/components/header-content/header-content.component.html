@@ -1,0 +1,23 @@
+<div class="example-container" *ngIf="shouldRun">
+  <div class="header">
+    <div class="logo">
+
+
+    </div>
+    <div class="button-container">
+      <a href="signup" class="button">
+        <mat-icon class="icon">group_add</mat-icon> Sign Up
+      </a>
+      <a href="login" class="button">
+        <mat-icon class="icon">group</mat-icon> Log In
+      </a>
+    </div>
+  </div>
+
+
+
+      <!--aqui van las etiquetas del contenido-->
+      <p><router-outlet></router-outlet></p>
+
+
+</div>

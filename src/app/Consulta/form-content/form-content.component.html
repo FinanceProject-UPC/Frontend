@@ -1,0 +1,68 @@
+<div class="container home-container px-4 py-5 my-5 d-flex flex-column justify-content-center"
+  style="min-height: 100vh;">
+  <div class="row justify-content-center text-center">
+    <div class="col-12">
+      <!-- <h1 class="welcome-title">Bienvenido, {{fullName}}</h1> -->
+    </div>
+    <div class="col-12 form-container my-4">
+      <div class="row justify-content-center">
+        <!-- Monto -->
+        <div class="col-lg-6 mb-3">
+          <label class="form-label blue-text">Monto</label>
+          <input type="number" class="form-control orange-border" placeholder="Escribe..." (input)="onInputChange()"
+            [(ngModel)]="monto">
+        </div>
+
+        <!-- Tipo de moneda -->
+        <div class="col-lg-6 mb-3">
+          <label class="form-label blue-text">Tipo de moneda</label>
+          <select class="form-select orange-border" (change)="onInputChange()" [(ngModel)]="tipoMoneda">
+            <option value="USD">Dólar</option>
+            <option value="PEN">Soles</option>
+          </select>
+        </div>
+
+        <!-- Tipo de tasa de interes -->
+        <div class="col-lg-6 mb-3">
+          <label class="form-label blue-text">Tipo de tasa de interes</label>
+          <select class="form-select orange-border" (change)="onInputChange()" [(ngModel)]="tipoTasaInteres">
+            <option value="TNA">Nominal (TNA)</option>
+            <option value="TEA">Efectiva (TEA)</option>
+          </select>
+        </div>
+
+        <!-- Cantidad de periodos de gracia -->
+        <div class="col-lg-6 mb-3">
+          <label class="form-label blue-text">Cantidad de periodos de gracia</label>
+          <input type="number" class="form-control orange-border" placeholder="Escribe..." (input)="onInputChange()"
+            [(ngModel)]="cantidadPeriodos">
+        </div>
+
+        <!-- Tipo de periodo de gracia -->
+        <div class="col-lg-6 mb-3">
+          <label class="form-label blue-text">Tipo de periodo de gracia</label>
+          <select class="form-select orange-border" (change)="onInputChange()" [(ngModel)]="tipoPeriodoGracia">
+            <option value='P'>Parcial</option>
+            <option value='T'>Total</option>
+            <option value="S">Sin plazo</option>
+          </select>
+        </div>
+
+        <!-- Plazo de pago -->
+        <div class="col-lg-6 mb-3">
+          <label class="form-label blue-text">Plazo de pago</label>
+          <select class="form-select orange-border" (ngModelChange)="onInputChange()" [(ngModel)]="plazoPago">
+            <option value="2"> 2 años</option>
+            <option value="3"> 3 años</option>
+          </select>
+        </div>
+
+        <!-- Botones -->
+        <div class="col-12 text-center">
+          <button class="btn btn-primary calculate-button" (click)="onConsultar()">Consultar</button>
+          <button class="btn btn-secondary cancel-button" (click)="toReset()">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.table-container {
+  height: 400px;
+  width: 100%; /* Usa el 100% del ancho del contenedor padre */
+  overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las celdas fijas (sticky) */
+.mat-mdc-table-sticky {
+  background: #002A8D; /* Azul Oscuro */
+  color: white;
+  font-weight: bold;
+  opacity: 1;
+}
+
+/* Estilos para los bordes de las celdas fijas */
+.mat-mdc-table-sticky-border-elem-top,
+.mat-mdc-table-sticky-border-elem-right,
+.mat-mdc-table-sticky-border-elem-bottom,
+.mat-mdc-table-sticky-border-elem-left {
+  border-color: #FF7800; /* Naranja */
+}
+
+/* Estilos para todas las celdas */
+.mat-mdc-header-cell,
+.mat-mdc-footer-cell,
+.mat-mdc-cell {
+  min-width: 80px; /* Ajusta esta medida si necesitas más espacio para el contenido de las celdas */
+  box-sizing: border-box;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Estilo para las celdas de relleno */
+.mat-column-filler {
+  padding: 0 8px;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* Estilos opcionales para mejorar la legibilidad */
+.mat-row, .mat-header-row {
+  transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+}
+
+.mat-row:hover, .mat-header-row:hover {
+  background-color: rgba(255, 120, 0, 0.2); /* Resalta la fila al pasar el mouse con color Naranja */
+}

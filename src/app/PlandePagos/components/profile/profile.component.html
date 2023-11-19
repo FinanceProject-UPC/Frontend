@@ -1,0 +1,49 @@
+<div *ngIf="userProfile">
+  <div class="container">
+    <img [src]="userProfile.profileImage || defaultProfileImage" alt="Profile Image"
+      class="profile-image img-fluid rounded-circle">
+
+    <div class="form-container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="primernombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="primernombre" name="nombre" [(ngModel)]="userProfile.firstName">
+          </div>
+          <div class="mb-3">
+            <label for="apellido" class="form-label">DNI:</label>
+            <input type="text" class="form-control" id="apellido" name="DNI" [(ngModel)]="userProfile.dni">
+          </div>
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono:</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" [(ngModel)]="userProfile.phone">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="otroApellido" class="form-label">Apellido:</label>
+            <input type="text" class="form-control" id="otroApellido" name="Apellido"
+              [(ngModel)]="userProfile.lastName">
+          </div>
+          <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección:</label>
+            <input type="text" class="form-control" id="direccion" name="direccion" [(ngModel)]="userProfile.direccion">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Contraseña:</label>
+            <input type="password" class="form-control" id="password" name="password"
+              [(ngModel)]="userProfile.password">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-container text-center my-3">
+      <button class="btn btn-primary" (click)="toggleEdit()">Update Profile</button>
+
+      <button class="btn btn-success" *ngIf="isEditing" (click)="saveProfile()">Save Changes</button>
+      <button class="btn btn-secondary" *ngIf="isEditing" (click)="cancelEdit()" >Cancel</button>
+    </div>
+  </div>
+</div>

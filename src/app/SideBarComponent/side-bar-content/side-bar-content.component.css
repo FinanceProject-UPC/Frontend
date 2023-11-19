@@ -1,0 +1,40 @@
+.bg-dark {
+  background-color: #002A8D; /* Azul Oscuro */
+}
+
+.nav-link {
+  color: #FF7800; /* Naranja */
+}
+
+.nav-link:hover, .nav-link.active {
+  background-color: #FF7800; /* Naranja */
+  color: white;
+}
+
+.bg-dark {
+  background-color: #002A8D !important; /* Azul Oscuro */
+}
+
+.nav-link.active {
+  background-color: #FF7800; /* Naranja */
+}
+
+.nav-link {
+  color: #FF7800; /* Naranja */
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.dropdown-menu-dark {
+  background-color: #002A8D; /* Azul Oscuro */
+}
+
+.dropdown-item {
+  color: white; /* Naranja */
+}
+
+.dropdown-item:hover {
+  background-color: #FF7800;
+}

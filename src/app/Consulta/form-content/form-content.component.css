@@ -1,0 +1,62 @@
+/* Estilos generales */
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-title {
+  color: blue;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilos para los botones y casilleros */
+.currency-button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.currency-button,
+.calculate-button {
+  background-color: #FF7800;
+  color: white;
+  border: 2px solid #FF7800;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Agrega estilos para los casilleros y demás elementos según sea necesario */
+
+.orange-border{
+  border: 1px solid #FF7800;
+
+}
+
+.button-active {
+  background-color: #FF7800;
+  color: white;
+}
+
+.button-inactive {
+  background-color: white;
+  color: #FF7800;
+  border: 1px solid #FF7800;
+}

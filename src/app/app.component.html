@@ -1,0 +1,12 @@
+<ng-container *ngIf="isProfileOrSignRoute()">
+  <app-header-content></app-header-content>
+</ng-container>
+
+<div class="container" *ngIf="!isProfileOrSignRoute()">
+  <section class="sidebar">
+    <app-side-bar-content></app-side-bar-content>
+  </section>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
