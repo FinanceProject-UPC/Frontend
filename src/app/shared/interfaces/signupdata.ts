@@ -7,6 +7,7 @@ export interface SignupData {
   dni: string;
   password: string;
   confirmPassword: string;
-  profileImage?: string; // Permite que profileImage sea opcional
-  direccion?: string; // Permite que direccion sea opcional
+  profileImage?: string;
+  direccion?: string;
+  urlPhoto?: string;
 }
