@@ -1,6 +1,6 @@
 <div *ngIf="userProfile">
   <div class="container">
-    <img [src]="userProfile.profileImage || defaultProfileImage" alt="Profile Image"
+    <img [src]="userProfile.urlPhoto || defaultProfileImage" alt="Profile Image"
       class="profile-image img-fluid rounded-circle">
 
     <div class="form-container">
@@ -43,7 +43,7 @@
       <button class="btn btn-primary" (click)="toggleEdit()">Update Profile</button>
 
       <button class="btn btn-success" *ngIf="isEditing" (click)="saveProfile()">Save Changes</button>
-      <button class="btn btn-secondary" *ngIf="isEditing" (click)="cancelEdit()" >Cancel</button>
+      <button class="btn btn-secondary" *ngIf="isEditing" (click)="cancelEdit()">Cancel</button>
     </div>
   </div>
 </div>
