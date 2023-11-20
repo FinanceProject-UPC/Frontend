@@ -6,13 +6,14 @@
         <!-- Monto Inicial -->
         <div class="col-lg-6 mb-3">
           <label class="form-label blue-text">¿Cuánto te gustaría pagar inicialmente?</label>
-          <input type="number" class="form-control orange-border" placeholder="Escribe..." [(ngModel)]="monto">
+          <input type="number" class="form-control orange-border" placeholder="Escribe..." (input)="onInputChange()"
+            [(ngModel)]="monto">
         </div>
 
         <!-- Tipo de Moneda -->
         <div class="col-lg-6 mb-3">
           <label class="form-label blue-text">¿En qué moneda realizarás tu cuota inicial?</label>
-          <select class="form-select orange-border" [(ngModel)]="tipoMoneda">
+          <select class="form-select orange-border" (change)="onInputChange()" [(ngModel)]="tipoMoneda">
             <option value="USD">Dólar</option>
             <option value="PEN">Soles</option>
           </select>
@@ -21,7 +22,7 @@
         <!-- Tipo de Tasa de Interés -->
         <div class="col-lg-6 mb-3">
           <label class="form-label blue-text">Elige cómo deseas tu Crédito Vehicular</label>
-          <select class="form-select orange-border" [(ngModel)]="tipoTasaInteres">
+          <select class="form-select orange-border" (change)="onInputChange()" [(ngModel)]="tipoTasaInteres">
             <option value="TNA">Nominal (TNA)</option>
             <option value="TEA">Efectiva (TEA)</option>
           </select>
@@ -30,14 +31,14 @@
         <!-- Cantidad de Periodos de Gracia -->
         <div class="col-lg-6 mb-3">
           <label class="form-label blue-text">¿Quieres algunos meses de gracia?</label>
-          <input type="number" class="form-control orange-border" placeholder="Escribe..."
+          <input type="number" class="form-control orange-border" placeholder="Escribe..." (input)="onInputChange()"
             [(ngModel)]="cantidadPeriodos">
         </div>
 
         <!-- Tipo de Periodo de Gracia -->
         <div class="col-lg-6 mb-3">
           <label class="form-label blue-text">¿Cómo prefieres tu gracia?</label>
-          <select class="form-select orange-border" [(ngModel)]="tipoPeriodoGracia">
+          <select class="form-select orange-border" (ngModelChange)="onInputChange()" [(ngModel)]="tipoPeriodoGracia">
             <option value='P'>Parcial</option>
             <option value='T'>Total</option>
             <option value="S">Sin plazo</option>
@@ -47,7 +48,7 @@
         <!-- Plazo de Pago -->
         <div class="col-lg-6 mb-3">
           <label class="form-label blue-text">¿Por cuántos años planeas financiarlo?</label>
-          <select class="form-select orange-border" [(ngModel)]="plazoPago">
+          <select class="form-select orange-border" (ngModelChange)="onInputChange()" [(ngModel)]="plazoPago">
             <option value="2">2 años</option>
             <option value="3">3 años</option>
           </select>
@@ -55,8 +56,8 @@
 
         <!-- Botones de Acción -->
         <div class="col-12 text-center">
-          <button class="btn btn-primary calculate-button me-2">Consultar</button> <!-- Añade un margen a la derecha -->
-          <button class="btn btn-secondary cancel-button">Cancelar</button>
+          <button class="btn btn-primary calculate-button me-2" (click)="onConsultar()">Consultar</button> <!-- Añade un margen a la derecha -->
+          <button class="btn btn-secondary cancel-button" (click)="toReset()">Cancelar</button>
         </div>
 
       </div>
