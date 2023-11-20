@@ -323,6 +323,24 @@
       "fechaConsulta": "2023-11-20T05:24:14.824Z",
       "studentId": 1,
       "id": 16
+    },
+    {
+      "N": 24,
+      "monto": 15000,
+      "Saldo": 8158.767945399395,
+      "TEM": 0.012575815353266906,
+      "Portes": 0,
+      "Gps": 0,
+      "pSegDesPer": 0.00049,
+      "CF": 5250,
+      "SegRiePer": 4.2904109589041095,
+      "GastosAdm": -10,
+      "tipoMoneda": "PEN",
+      "tipoPeriodo": "P",
+      "cPG": 4,
+      "fechaConsulta": "2023-11-20T05:42:12.850Z",
+      "studentId": 2,
+      "id": 17
     }
   ]
 }

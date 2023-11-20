@@ -10,6 +10,8 @@ import {SignupComponent} from "./PlandePagos/components/signup/signup.component"
 import {SessionContentComponent} from "./Consulta/session-content/session-content.component";
 import {ProfileComponent} from "./PlandePagos/components/profile/profile.component";
 import { HomeContentComponent } from './home-content/home-content.component';
+import { AboutComponent } from './about/about.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -22,7 +24,9 @@ const routes: Routes = [
   {path: 'signup', component: SignupComponent },
   {path: 'session', component: SessionContentComponent },
   { path: 'profile/:studentId', component: ProfileComponent },
-  {path: 'benefit', component: HomeContentComponent}
+  {path: 'benefit', component: HomeContentComponent},
+  {path: 'about', component: AboutComponent}
+
 ];
 
 @NgModule({

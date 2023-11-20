@@ -26,7 +26,9 @@ import { HttpClientModule } from '@angular/common/http';
 import {LoginComponent} from "./PlandePagos/components/login/login.component";
 import {SignupComponent} from "./PlandePagos/components/signup/signup.component";
 import { SessionContentComponent } from './Consulta/session-content/session-content.component';
-import { ProfileComponent } from './PlandePagos/components/profile/profile.component'; // Importa HttpClientModule
+import { ProfileComponent } from './PlandePagos/components/profile/profile.component';
+import { AboutComponent } from './about/about.component';
+
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { ProfileComponent } from './PlandePagos/components/profile/profile.compo
     SignupComponent,
     SessionContentComponent,
     ProfileComponent,
+    AboutComponent,
+
   ],
   imports: [
     BrowserModule,

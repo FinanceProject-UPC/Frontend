@@ -1,0 +1,26 @@
+/* Estilos CSS */
+.main-title {
+  font-size: 2.5rem; /* Tamaño grande */
+  color: #003396; /* Color azul */
+  text-align: center; /* Centrar el texto */
+  margin-top: 80px; /* Agregar margen superior */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+.feature {
+  text-align: center; /* Centrar elementos */
+  padding: 30px; /* Espaciado interno */
+}
+
+.feature-title {
+  font-size: 2rem; /* Tamaño grande para los títulos */
+  /* Otros estilos para los títulos de características si es necesario */
+  margin-bottom: 20px; /* Agregar margen inferior al título */
+}
+.title
+{
+  font-size: 1.5rem; /* Tamaño grande */
+  color: #003396; /* Color azul */
+  text-align: center; /* Centrar el texto */
+  margin-bottom: 20px; /* Espacio inferior */
+}
