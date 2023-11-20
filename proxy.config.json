@@ -1,0 +1,10 @@
+{
+    "/api": {
+        "target": "https://my-json-server.typicode.com/FinanceProject-UPC/Backend",
+        "secure": false,
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/api": ""
+        }
+    }
+}

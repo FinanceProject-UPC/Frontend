@@ -7,7 +7,7 @@ import { SignupData} from "../../../shared/interfaces/signupdata";
   providedIn: 'root'
 })
 export class ProfileServiceService {
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = 'https://my-json-server.typicode.com/FinanceProject-UPC/Backend';
 
   constructor(private http: HttpClient) { }
 

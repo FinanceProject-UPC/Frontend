@@ -8,7 +8,7 @@ import {SignupData} from "../../shared/interfaces/signupdata";
   providedIn: 'root'
 })
 export class SignupService {
-  private basePath = 'http://localhost:3000/api/v1';
+  private basePath = 'https://my-json-server.typicode.com/FinanceProject-UPC/Backend';
   private httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'
