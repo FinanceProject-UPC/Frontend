@@ -3,24 +3,56 @@
   font-size: 2.5rem; /* Tamaño grande */
   color: #003396; /* Color azul */
   text-align: center; /* Centrar el texto */
-  margin-top: 80px; /* Agregar margen superior */
-  margin-bottom: 20px; /* Espacio inferior */
+  margin-top: 60px; /* Agregar margen superior */
+  margin-bottom: 5px; /* Espacio inferior */
 }
 
 .feature {
   text-align: center; /* Centrar elementos */
   padding: 30px; /* Espaciado interno */
 }
+.feature img {
+  display: block;
+  margin: 0 auto; /* Centra la imagen */
+}
 
 .feature-title {
-  font-size: 2rem; /* Tamaño grande para los títulos */
-  /* Otros estilos para los títulos de características si es necesario */
-  margin-bottom: 20px; /* Agregar margen inferior al título */
+  font-size: 1.4rem; /* Tamaño grande para los títulos */
+  color: #003396; /* Color azul */
+  margin-bottom: 15px; /* Agregar margen inferior al título */
 }
 .title
 {
-  font-size: 1.5rem; /* Tamaño grande */
+  font-size: 1.6rem; /* Tamaño grande */
   color: #003396; /* Color azul */
   text-align: center; /* Centrar el texto */
   margin-bottom: 20px; /* Espacio inferior */
 }
+.lista {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px; /* Espacio inferior */
+}
+.lista li {
+  margin-bottom: 1cm;
+  display: flex;
+  align-items: center;
+}
+.check {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+.btn-custom {
+  padding: 10px; /* Ajusta el espaciado interno según sea necesario */
+  border-radius: 20px; /* Establece un borde ovalado */
+  width: fit-content; /* Hace que el ancho sea del tamaño del contenido */
+  background-color: #FF7800; /* Cambia esto al color que desees */
+  color: white; /* Cambia el color del texto si es necesario */
+  border: none; /* Elimina el borde si no lo necesitas */
+  display: block; /* Para centrar el botón */
+  margin: 0 auto; /* Para centrar el botón */
+  font-weight: bold; /* Hace el texto más grueso */
+}
+
+
+
